@@ -30,7 +30,7 @@ const Heading = styled('h6')(({ theme }) => ({
 const StatCards = () => {
   const cardList = [
     { name: 'Users', amount: 168, icon: 'group' },
-    { name: 'Afk Page', amount: '$80,500', icon: 'attach_money' },
+    { name: 'Afk Page', amount: '$0', icon: 'attach_money' },
     { name: 'Store', amount: 'Ram,Cpu,Disk,. available', icon: 'store' },
     { name: 'Your Cart Item', amount: '0', icon: 'shopping_cart' },
   ];
