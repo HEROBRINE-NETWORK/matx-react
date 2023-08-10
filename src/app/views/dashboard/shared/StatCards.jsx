@@ -29,10 +29,10 @@ const Heading = styled('h6')(({ theme }) => ({
 
 const StatCards = () => {
   const cardList = [
-    { name: 'New Leads', amount: 3050, icon: 'group' },
-    { name: 'This week Sales', amount: '$80,500', icon: 'attach_money' },
-    { name: 'Inventory Status', amount: '8.5% Stock Surplus', icon: 'store' },
-    { name: 'Orders to deliver', amount: '305 Orders', icon: 'shopping_cart' },
+    { name: 'Users', amount: 168, icon: 'group' },
+    { name: 'Afk Page', amount: '$80,500', icon: 'attach_money' },
+    { name: 'Store', amount: 'Ram,Cpu,Disk,. available', icon: 'store' },
+    { name: 'Your Cart Item', amount: '0', icon: 'shopping_cart' },
   ];
 
   return (
