@@ -28,19 +28,15 @@ const AppDialog = () => {
       </Box>
 
       <Stack spacing={3}>
-        <SimpleCard title="simple Dialog">
+        <SimpleCard title="Accounts">
           <SimpleDialogDemo />
         </SimpleCard>
 
-        <SimpleCard title="alert dialog">
+        <SimpleCard title="Google">
           <AlertDialog />
         </SimpleCard>
 
-        <SimpleCard title="transition">
-          <AlertDialogSlide />
-        </SimpleCard>
-
-        <SimpleCard title="form dialog">
+        <SimpleCard title="form">
           <FormDialog />
         </SimpleCard>
 
