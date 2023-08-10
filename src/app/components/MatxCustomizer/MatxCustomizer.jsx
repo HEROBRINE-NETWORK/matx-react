@@ -103,7 +103,7 @@ const MatxCustomizer = () => {
     <Fragment>
       <Tooltip title="Theme Settings" placement="left">
         <Label className="open" onClick={tooglePanel}>
-          DEMOS
+        Theme
         </Label>
       </Tooltip>
 
@@ -136,7 +136,7 @@ const MatxCustomizer = () => {
                 color={tabIndex === 0 ? 'secondary' : 'primary'}
                 sx={{ mr: 2 }}
               >
-                Demos
+                Theme
               </Button>
               <Button
                 variant="outlined"
@@ -183,9 +183,9 @@ const MatxCustomizer = () => {
               {tabIndex === 1 && (
                 <div>
                   <div className="helpText">
-                    We used React context API to control layout. Check out the{' '}
-                    <Link href="http://demos.ui-lib.com/matx-react-doc/layout.html" target="_blank">
-                      Documentation
+                    Join our discord server{' '}
+                    <Link href="https://discord.gg/multiverse-development-964013065140043786" target="_blank">
+                      Click here
                     </Link>
                   </div>
                 </div>
@@ -202,7 +202,7 @@ const demoLayouts = [
   {
     isPro: false,
     name: 'Light Sidebar',
-    thumbnail: '/assets/images/screenshots/layout1-customizer.png',
+    thumbnail: '/assets/images/screenshots/Theme.png',
     options: {
       activeTheme: 'blue',
       activeLayout: 'layout1',
@@ -216,7 +216,7 @@ const demoLayouts = [
   {
     isPro: false,
     name: 'Compact Sidebar',
-    thumbnail: '/assets/images/screenshots/layout5-customizer.png',
+    thumbnail: '/assets/images/screenshots/Theme.png',
     options: {
       activeTheme: 'blue',
       activeLayout: 'layout1',
@@ -229,7 +229,7 @@ const demoLayouts = [
   {
     isPro: false,
     name: 'Dark Sidebar',
-    thumbnail: '/assets/images/screenshots/layout1-blue-customizer.png',
+    thumbnail: '/assets/images/screenshots/Theme.png',
     options: {
       activeTheme: 'blue',
       activeLayout: 'layout1',
