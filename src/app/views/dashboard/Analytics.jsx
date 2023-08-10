@@ -1,72 +1,49 @@
-import { Card, Grid, styled, useTheme } from '@mui/material';
-import { Fragment } from 'react';
-import Campaigns from './shared/Campaigns';
-import DoughnutChart from './shared/Doughnut';
-import RowCards from './shared/RowCards';
-import StatCards from './shared/StatCards';
-import StatCards2 from './shared/StatCards2';
-import TopSellingTable from './shared/TopSellingTable';
-import UpgradeCard from './shared/UpgradeCard';
+import { Button, Card, styled } from '@mui/material';
+import { convertHexToRGB } from 'app/utils/utils';
 
-const ContentBox = styled('div')(({ theme }) => ({
-  margin: '30px',
-  [theme.breakpoints.down('sm')]: { margin: '16px' },
+const CardRoot = styled(Card)(({ theme }) => ({
+  marginBottom: '24px',
+  padding: '24px !important',
+  [theme.breakpoints.down('sm')]: { paddingLeft: '16px !important' },
 }));
 
-const Title = styled('span')(() => ({
-  fontSize: '1rem',
-  fontWeight: '500',
-  marginRight: '.5rem',
-  textTransform: 'capitalize',
+const StyledCard = styled(Card)(({ theme }) => ({
+  boxShadow: 'none',
+  textAlign: 'center',
+  position: 'relative',
+  padding: '24px !important',
+  background: `rgb(${convertHexToRGB(theme.palette.primary.main)}, 0.15) !important`,
+  [theme.breakpoints.down('sm')]: { padding: '16px !important' },
 }));
 
-const SubTitle = styled('span')(({ theme }) => ({
-  fontSize: '0.875rem',
+const Paragraph = styled('p')(({ theme }) => ({
+  margin: 0,
+  paddingTop: '24px',
+  paddingBottom: '24px',
   color: theme.palette.text.secondary,
 }));
 
-const H4 = styled('h4')(({ theme }) => ({
-  fontSize: '1rem',
-  fontWeight: '500',
-  marginBottom: '16px',
-  textTransform: 'capitalize',
-  color: theme.palette.text.secondary,
-}));
-
-const Analytics = () => {
-  const { palette } = useTheme();
-
+const UpgradeCard = () => {
   return (
-    <Fragment>
-      <ContentBox className="analytics">
-        <Grid container spacing={3}>
-          <Grid item lg={8} md={8} sm={12} xs={12}>
-            <StatCards />
-            <TopSellingTable />
-            <StatCards2 />
+    <CardRoot>
+      <StyledCard elevation={0}>
+        <img src="/assets/images/illustrations/upgrade.svg" alt="upgrade" />
 
-            <H4>Ongoing Projects</H4>
-            <RowCards />
-          </Grid>
+        <Paragraph>
+          Upgrade to <b>MatX PRO</b> for <br /> more resources
+        </Paragraph>
 
-          <Grid item lg={4} md={4} sm={12} xs={12}>
-            <Card sx={{ px: 3, py: 2, mb: 3 }}>
-              <Title>Traffic Sources</Title>
-              <SubTitle>Last 30 days</SubTitle>
-
-              <DoughnutChart
-                height="300px"
-                color={[palette.primary.dark, palette.primary.main, palette.primary.light]}
-              />
-            </Card>
-
-            <UpgradeCard />
-            <Campaigns />
-          </Grid>
-        </Grid>
-      </ContentBox>
-    </Fragment>
+        <Button
+          size="large"
+          color="primary"
+          variant="contained"
+          sx={{ textTransform: 'uppercase' }}
+        >
+          upgrade now
+        </Button>
+      </StyledCard>
+    </CardRoot>
   );
 };
 
-export default Analytics;
+export default UpgradeCard;
