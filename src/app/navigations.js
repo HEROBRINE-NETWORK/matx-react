@@ -7,8 +7,7 @@ export const navigations = [
     children: [
       { name: 'Sign in', iconText: 'SI', path: '/session/signin' },
       { name: 'Sign up', iconText: 'SU', path: '/session/signup' },
-      { name: 'Forgot Password', iconText: 'FP', path: '/session/forgot-password' },
-      { name: 'Error', iconText: '404', path: '/session/404' }
+      { name: 'Forgot Password', iconText: 'FP', path: '/session/forgot-password' }
     ]
   },
   { label: 'Components', type: 'label' },
@@ -39,9 +38,9 @@ export const navigations = [
     children: [{ name: 'Echarts', path: '/charts/echarts', iconText: 'E' }]
   },
   {
-    name: 'Documentation',
+    name: 'Panel',
     icon: 'launch',
     type: 'extLink',
-    path: 'http://demos.ui-lib.com/matx-react-doc/'
+    path: 'https://discord.gg/multiverse-development-964013065140043786'
   }
 ];
