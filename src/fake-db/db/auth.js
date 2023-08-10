@@ -45,7 +45,7 @@ Mock.onPost('/api/auth/register').reply((config) => {
     const newUser = {
       id: 2,
       role: 'GUEST',
-      name: 'Unknown',
+      name: username,
       age: 25,
       email: email,
       username: username,
