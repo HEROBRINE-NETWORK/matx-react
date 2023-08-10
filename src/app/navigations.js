@@ -2,7 +2,7 @@ export const navigations = [
   { name: 'Dashboard', path: '/dashboard/default', icon: 'dashboard' },
   { label: 'PAGES', type: 'label' },
   {
-    name: 'Session/Auth',
+    name: 'Auth',
     icon: 'security',
     children: [
       { name: 'Sign in', iconText: 'SI', path: '/session/signin' },
@@ -31,11 +31,6 @@ export const navigations = [
       { name: 'Snackbar', path: '/material/snackbar', iconText: 'S' },
       { name: 'Table', path: '/material/table', iconText: 'T' }
     ]
-  },
-  {
-    name: 'Charts',
-    icon: 'trending_up',
-    children: [{ name: 'Echarts', path: '/charts/echarts', iconText: 'E' }]
   },
   {
     name: 'Panel',
