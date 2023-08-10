@@ -76,7 +76,7 @@ export default function SimpleDialogDemo() {
       <Typography variant="subtitle1">Selected: {selectedValue}</Typography>
       <br />
       <Button variant="outlined" color="primary" onClick={handleClickOpen}>
-        Open simple dialog
+        selete account
       </Button>
       <SimpleDialog selectedValue={selectedValue} open={open} onClose={handleClose} />
     </Box>
