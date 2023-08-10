@@ -132,33 +132,35 @@ const TopSellingTable = () => {
 
 const productList = [
   {
-    imgUrl: '/assets/images/products/headphone-2.jpg',
-    name: 'earphone',
-    price: 100,
-    available: 15,
+    imgUrl: '/assets/images/products/minecraft.png',
+    name: 'Minecraft Server',
+    price: 40,
+    available: 7,
   },
   {
-    imgUrl: '/assets/images/products/headphone-3.jpg',
-    name: 'earphone',
-    price: 1500,
-    available: 30,
+    imgUrl: '/assets/images/products/vps.png',
+    name: 'virtual private server',
+    price: 20,
+    available: 9,
   },
   {
-    imgUrl: '/assets/images/products/iphone-2.jpg',
-    name: 'iPhone x',
-    price: 1900,
-    available: 35,
+    imgUrl: '/assets/images/products/domain.png',
+    name: 'Domains',
+    price: 6,
+    available: 50,
   },
   {
-    imgUrl: '/assets/images/products/iphone-1.jpg',
-    name: 'iPhone x',
-    price: 100,
-    available: 0,
+    imgUrl: '/assets/images/products/minecraft.png',
+    name: 'Minecraft Server',
+    price: 20,
+    available: 5,
   },
   {
-    imgUrl: '/assets/images/products/headphone-3.jpg',
-    name: 'Head phone',
-    price: 1190,
+    imgUrl: '/assets/images/products/minecraft.png',
+    name: 'Minecraft Server',
+    price: 10
+    
+    ,
     available: 5,
   },
 ];
