@@ -1,4 +1,4 @@
-import { memo } from 'react';
+  import { memo } from 'react';
 import { Link } from 'react-router-dom';
 import {
   Avatar,
@@ -113,14 +113,6 @@ const Layout1Topbar = () => {
           <IconBox>
             <StyledIconButton>
               <Icon>mail_outline</Icon>
-            </StyledIconButton>
-
-            <StyledIconButton>
-              <Icon>web_asset</Icon>
-            </StyledIconButton>
-
-            <StyledIconButton>
-              <Icon>star_outline</Icon>
             </StyledIconButton>
           </IconBox>
         </Box>
